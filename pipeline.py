@@ -15,7 +15,7 @@ def transformar_dados(df):
     df = df[df["valor_unitario"] > 0]
 
     #calcular o faturamento
-    df["faturamento"] = df["quantidade"] * df["valor_unitario"]
+    df["faturamento"] = df["quantidade"] + df["valor_unitario"]
 
     return df
 
